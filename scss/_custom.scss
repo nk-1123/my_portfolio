@@ -1,1 +1,55 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss"
+
+
+
+
+//theme colors
+// white       rgba(255, 255, 255, 1)
+// peach       rgba(244, 220, 197, 1)
+// grey-medium rgba(66, 66, 66, 1)   circle stroke
+// grey-med2   rgba(33, 33, 33, 1)   circle fill
+// black-light rgba(21, 19, 18, 1)
+// grey-dark   rgba(32, 29, 28, 1)
+// grey-light  rgba(50, 46, 44, 1)
+
+
+
+
+
+// theme colors
+$white:    rgba(255, 255, 255, 1);
+$peach:    rgba(244, 220, 197, 1);
+$gray-100: rgba(66, 66, 66, 1);
+$gray-200: rgba(50, 46, 44, 1);
+$gray-300: rgba(33, 33, 33, 1);
+$gray-400: rgba(32, 29, 28, 1);
+$gray-500: rgba(21, 19, 18, 1);
+
+$primary:       $peach;
+$dark:          $gray-500;
+$light:         $gray-400;
+
+$secondary:     $gray-100;
+$secondary1:    $gray-200;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: $light;
+    //border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+   // -webkit-box-shadow: inset 0 0 6px rgba(5, 4, 4, 0.5);
+    background: $secondary1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $secondary;
+  }

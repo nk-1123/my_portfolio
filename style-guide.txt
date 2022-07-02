@@ -1,0 +1,36 @@
+PORTFOLIO STYLE-GUIDE
+
+--designs widths--
+-mobile: 375px
+-desktop: 1440px
+
+
+---text-colors--
+white       rgba(255, 255, 255, 1)
+peach       rgba(244, 220, 197, 1)
+grey-medium rgba(66, 66, 66, 1)   circle stroke
+grey-med2   rgba(33, 33, 33, 1)   circle fill
+
+--bg-colors
+black-light rgba(21, 19, 18, 1)
+grey-dark   rgba(32, 29, 28, 1)
+grey-light  rgba(50, 46, 44, 1)
+
+
+---typography--
+
+--font
+family: 
+   html-- 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=PT+Sans&family=Secular+One&display=swap" rel="stylesheet">
+ 
+  css-- 	font-family: 'Berkshire Swash', cursive;
+		font-family: 'PT Sans', sans-serif;
+		font-family: 'Secular One', sans-serif;
+weights: 	400(regular) 700(bold)
+size:		heading- 	 80  40  32  24  
+		normal text- 16  14
+letter spacing: 14px, 4, 3.75, 2, 1.25
+para spacing: 5px(skills) 0px(rest)

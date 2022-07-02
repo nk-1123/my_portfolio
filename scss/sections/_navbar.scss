@@ -1,0 +1,13 @@
+@use '../custom' as *;
+
+
+.menu {
+    background: $light  !important;
+    padding: 1rem;
+
+    shadow {
+        // box-shadow: 0 0.5rem 1rem rgba(10, 10, 10, 0.15) !important;
+        box-shadow: 0 0.5rem 1rem rgba(11, 11, 11, 0.411) !important;
+    
+    }
+}
