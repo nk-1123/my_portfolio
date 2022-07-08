@@ -1,10 +1,6 @@
-
-
-
-
 //theme colors
 // white       rgba(255, 255, 255, 1)
-// peach       rgba(244, 220, 197, 1)
+//peach       rgba(244, 220, 197, 1)
 // grey-medium rgba(66, 66, 66, 1)   circle stroke
 // grey-med2   rgba(33, 33, 33, 1)   circle fill
 // black-light rgba(21, 19, 18, 1)
@@ -16,40 +12,111 @@
 
 
 // theme colors
-$white:    rgba(255, 255, 255, 1);
-$peach:    rgba(244, 220, 197, 1);
-$gray-100: rgba(66, 66, 66, 1);
-$gray-200: rgba(50, 46, 44, 1);
-$gray-300: rgba(33, 33, 33, 1);
-$gray-400: rgba(32, 29, 28, 1);
-$gray-500: rgba(21, 19, 18, 1);
+$white: rgba(255, 255, 255, 1);
+$peach: #f4dcc5;
+$pink: #fba5da;
+// $g-100: #97E0E9;
+// $g-200: #31718C;
+// $g-300: #124559;
+//$g-400: #212529;
+$g-100: rgb(110, 110, 110);
+$g-200: rgb(200 165 147);
+$g-300: rgb(153 141 135);
+$g-400: rgba(32, 29, 28, 1);
+$light: $g-300;
 
-$primary:       $peach;
-$dark:          $gray-500;
-$light:         $gray-400;
+// $gray-300: rgba(33, 33, 33, 1);
+// $gray-400: rgba(32, 29, 28, 1);
 
-$secondary:     $gray-100;
-$secondary1:    $gray-200;
+
+// $neon1: $peach;
+$neon: $peach;
+$light-1: $g-100;
+$light-2: $g-200;
+$dark-1: $g-300;
+$dark-2: $g-400;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+html {
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'VT323', monospace;
+
+
+    h1, h2, h4,h5,h6,p{
+        font-family: 'PT Sans', sans-serif;
+    }
+    h1{
+        font-size: 5rem ;
+        font-weight: 800;
+        letter-spacing: 0.5rem;
+        color: $g-200;
+    }
+    h2{
+        font-size: 3rem ;
+        font-weight: 600;
+        // letter-spacing: 0.2rem;
+        color: $g-300;
+    }
+    
+    h3{
+        font-family: 'VT323', monospace;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        color: $peach;
+    }
+    h4{
+        font-size: 4rem;
+        font-family: 'VT323', monospace;
+        letter-spacing: 0.2rem;
+    }
+    h5{
+        font-size: 2rem ;
+        font-weight: 300;
+        color: $g-200;
+    }
+    h6{
+        font-size: 1rem ;
+        font-weight: 200;
+        color: $g-300;
+        // letter-spacing: 0.5rem;
+    }
+    p{
+        font-size: 1.5rem ;
+        font-weight: 100;
+        // letter-spacing: 0.5rem;
+        word-spacing: 0.2 rem;
+        color: $g-300;
+
+    }
+
+    span{
+        font-family: 'VT323', monospace;
+    }
+ 
+
+}
+
+
+//////////////scrollbar////////////
 ::-webkit-scrollbar {
     width: 0.5rem;
 }
 
 ::-webkit-scrollbar-track {
     //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background: $light;
+    background: $dark-2;
     //border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: .5rem;
-   // -webkit-box-shadow: inset 0 0 6px rgba(5, 4, 4, 0.5);
-    background: $secondary1;
+    // -webkit-box-shadow: inset 0 0 6px rgba(5, 4, 4, 0.5);
+    background: $g-300;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: $secondary;
-  }
+// ::-webkit-scrollbar-thumb:hover {
+//     background: $light-2;
+// }

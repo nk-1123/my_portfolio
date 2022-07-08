@@ -1,0 +1,16 @@
+@use '../custom' as *;
+
+
+.hero {
+    background-color: $dark-2;
+    padding: 6rem 20rem 20rem 5rem;
+    height: fit-content;
+
+    .h2 {
+        text-align: left;
+    }
+p{
+    // text-transform: capitalize;
+}
+
+}

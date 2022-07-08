@@ -1,13 +1,57 @@
 @use '../custom' as *;
 
 
-.menu {
-    background: $light  !important;
-    padding: 1rem;
+.navbar {
+
+    background: $dark-2  !important;
+    padding: 0.2rem !important;
+
+    //position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    transition: top 0.3s !important;//add js from whschool website on hide navbar on scroll
+
+
+    .navbar-collapse {
+        justify-content: end !important;
+    }
+
+    .navbar-nav{
+        width: auto;
+    }
+
+    .nav-link{
+        padding-left: 1rem !important;
+    }
+
+
+    justify-content: end !important;
+
+    a {
+        font-family: 'VT323', monospace;
+        font-size: 1.5rem;
+        color: $light-1  !important;
+        text-decoration: none;
+    }
+
+    span {
+        color: $neon;
+        padding-right: 0.4rem;
+    }
 
     shadow {
         // box-shadow: 0 0.5rem 1rem rgba(10, 10, 10, 0.15) !important;
-        box-shadow: 0 0.5rem 1rem rgba(11, 11, 11, 0.411) !important;
-    
+        box-shadow: 0 0.5rem 1rem rgba(17, 18, 17, 0.411) !important;
+
     }
 }
+
+
+// @media (min-width: 992px){
+
+// top: 0;
+//     .navbar-expand-lg .navbar-collapse {
+//         display: flex !important;
+//         flex-basis: auto;
+//     }
+// }

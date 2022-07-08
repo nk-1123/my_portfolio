@@ -1,0 +1,13 @@
+@use 'custom';
+
+//sections
+@use 'sections/aboutme';
+@use 'sections/contact';
+@use 'sections/navbar';
+@use 'sections/hero';
+@use 'sections/projects';
+@use 'sections/footer';
+
+//components
+@use 'components/mixins';
+@use 'components/typography';

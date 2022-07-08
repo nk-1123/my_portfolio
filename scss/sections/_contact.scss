@@ -1,0 +1,39 @@
+@use '../custom' as *;
+
+.contact{
+    background: $dark-2;
+    padding: 5rem;
+    width:100%;
+    align-items: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    a{
+        text-decoration: none;
+        color: $g-300;
+        // margin: 5rem;
+    }
+    a:hover{
+        color: $g-400;
+    }
+    h4, p{
+        color: $g-300;
+        padding-bottom: 1rem;
+    }
+    h4{
+        padding-bottom: 2rem;
+
+    }
+    span{
+        color: $peach;
+    }
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
