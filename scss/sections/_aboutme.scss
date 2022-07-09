@@ -26,7 +26,17 @@
     span {
         color: $peach;
     }
-
+    .pic1{
+        display: flex;
+        justify-content: center;
+        .pic{
+            height:20rem;
+            width:20rem;
+            object-fit: cover;
+            border-radius: 50%;
+           
+        }
+    }
     .i-do {
         display: flex;
         flex-direction: row;

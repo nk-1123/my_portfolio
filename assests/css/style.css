@@ -10806,6 +10806,16 @@ html span {
 .about span {
   color: #f4dcc5;
 }
+.about .pic1 {
+  display: flex;
+  justify-content: center;
+}
+.about .pic1 .pic {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
 .about .i-do {
   display: flex;
   flex-direction: row;
