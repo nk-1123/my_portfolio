@@ -43,48 +43,59 @@ $dark-2: $g-400;
 html {
     font-family: 'PT Sans', sans-serif;
     font-family: 'VT323', monospace;
+    // transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 
-
-    h1, h2, h4,h5,h6,p{
+    h1,
+    h2,
+    h4,
+    h5,
+    h6,
+    p {
         font-family: 'PT Sans', sans-serif;
     }
-    h1{
-        font-size: 5rem ;
+
+    h1 {
+        font-size: 5rem;
         font-weight: 800;
         letter-spacing: 0.5rem;
         color: $g-200;
     }
-    h2{
-        font-size: 3rem ;
+
+    h2 {
+        font-size: 3rem;
         font-weight: 600;
         // letter-spacing: 0.2rem;
         color: $g-300;
     }
-    
-    h3{
+
+    h3 {
         font-family: 'VT323', monospace;
         font-size: 2rem;
         letter-spacing: 0.2rem;
         color: $peach;
     }
-    h4{
+
+    h4 {
         font-size: 4rem;
         font-family: 'VT323', monospace;
         letter-spacing: 0.2rem;
     }
-    h5{
-        font-size: 2rem ;
+
+    h5 {
+        font-size: 2rem;
         font-weight: 300;
         color: $g-200;
     }
-    h6{
-        font-size: 1rem ;
+
+    h6 {
+        font-size: 1rem;
         font-weight: 200;
         color: $g-300;
         // letter-spacing: 0.5rem;
     }
-    p{
-        font-size: 1.5rem ;
+
+    p {
+        font-size: 1.5rem;
         font-weight: 100;
         // letter-spacing: 0.5rem;
         word-spacing: 0.2 rem;
@@ -92,10 +103,71 @@ html {
 
     }
 
-    span{
+    span {
         font-family: 'VT323', monospace;
     }
- 
+
+
+    @include media-breakpoint-down(md) {
+        .hero {
+            background-color: $dark-2;
+            padding: 2rem;
+            height: fit-content;
+
+            .h2 {
+                text-align: left;
+                font-size: 2.5rem;
+            }
+
+        }
+
+        .project {
+            padding: 1rem !important;
+            padding-top: 3rem !important;
+            padding-bottom: 3rem !important;
+            text-align: center;
+
+            .h4 {
+                padding: 1rem;
+                font-size: 3rem;
+            }
+        }
+
+        .about {
+            h4 {
+                text-align: center;
+                //justify-content: end;
+                width: 100% !important;
+                padding-right: 0rem !important;
+            }
+
+            .pic1 {
+
+                .pic {
+                    height: 15rem;
+                    width: 15rem;
+                }
+            }
+
+            .about-body {
+                padding: 2rem;
+            }
+
+
+            .i-do {
+                flex-direction: column;
+                padding: 4rem;
+            }
+        
+        }
+
+
+        .footer{
+            padding: 1rem;
+        }
+
+    }
+
 
 }
 

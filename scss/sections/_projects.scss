@@ -1,21 +1,5 @@
 @use '../custom' as *;
 
-.d-flex {
-    @include media-breakpoint-down(sm) {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .card {
-            margin: 1rem;
-        }
-
-    }
-
-    flex-direction: row;
-    justify-content: center;
-}
 
 .project {
     padding: 4rem !important;
@@ -37,17 +21,28 @@
 
 
     }
-
+    .card-grp{
+        // display: inline-block;
+        text-align: center;
+        align-items: center;
+        padding: 5rem;
+        height: fit-content;
+    }
+    
     .card {
-
+        
+        display: inline-block;
         background: rgb(39 36 34);
         height: 20rem;
         width: 18rem;
+        min-width: 18rem;
         text-align: left;
         justify-content: right;
+        align-items: center;
         margin: 0.5rem;
-        padding: 0;
-        border: 0;
+        vertical-align: top;
+
+
 
         box-shadow: 0 6px 10px rgba(8, 8, 8, 0.696), 0 0 6px rgba(0, 0, 0, .05);
         transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
@@ -77,29 +72,34 @@
         //     width: 50%;
         // }
 
-.head{
-    padding: 1rem;
-    // padding-bottom: 1rem;
-    border-bottom: solid 0.1rem $g-300;
-    padding-top: 0;
-}
-h5{
-    padding: 0.5rem;
-}
-p{
-    padding: 0.5rem;
-    font-size: 1rem;
-}
-.card-subtitle{
-    padding: 0.5rem;
-    position: absolute;
-    bottom: 0.5rem;
-    
-}
-a{
-    color: $peach;
-}
+        .head {
+            padding: 1rem;
+            // padding-bottom: 1rem;
+            border-bottom: solid 0.1rem $g-300;
+            padding-top: 0;
+        }
+
+        h5 {
+            padding: 0.5rem;
+        }
+
+        p {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .card-subtitle {
+            padding: 0.5rem;
+            position: absolute;
+            bottom: 0.5rem;
+
+        }
+
+        a {
+            color: $peach;
+        }
     }
+
 
     .card:hover {
         // background-color: #2526274f;
@@ -112,4 +112,6 @@ a{
         }
 
     }
+
+
 }

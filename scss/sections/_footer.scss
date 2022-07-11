@@ -5,12 +5,11 @@
     height: fit-content;
     padding: 3rem;
     border-top: solid 0.05rem $g-300;
-    
+
 
     .d-flex{
-
+        justify-content: center;
     }
-
     a{
         text-decoration: none;
         padding: 1rem;

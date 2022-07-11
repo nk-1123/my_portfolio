@@ -10726,7 +10726,16 @@ html {
   font-family: "PT Sans", sans-serif;
   font-family: "VT323", monospace;
 }
-html h1, html .h1, html h2, html .h2, html h4, html .h4, html h5, html .h5, html h6, html .h6, html p {
+html h1, html .h1,
+html h2,
+html .h2,
+html h4,
+html .h4,
+html h5,
+html .h5,
+html h6,
+html .h6,
+html p {
   font-family: "PT Sans", sans-serif;
 }
 html h1, html .h1 {
@@ -10769,6 +10778,46 @@ html p {
 }
 html span {
   font-family: "VT323", monospace;
+}
+@media (max-width: 767.98px) {
+  html .hero {
+    background-color: rgb(32, 29, 28);
+    padding: 2rem;
+    height: fit-content;
+  }
+  html .hero .h2 {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  html .project {
+    padding: 1rem !important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    text-align: center;
+  }
+  html .project .h4 {
+    padding: 1rem;
+    font-size: 3rem;
+  }
+  html .about h4, html .about .h4 {
+    text-align: center;
+    width: 100% !important;
+    padding-right: 0rem !important;
+  }
+  html .about .pic1 .pic {
+    height: 15rem;
+    width: 15rem;
+  }
+  html .about .about-body {
+    padding: 2rem;
+  }
+  html .about .i-do {
+    flex-direction: column;
+    padding: 4rem;
+  }
+  html .footer {
+    padding: 1rem;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -10871,13 +10920,6 @@ html span {
   color: #f4dcc5;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-
 .navbar {
   background: rgb(32, 29, 28) !important;
   padding: 0.2rem !important;
@@ -10917,21 +10959,6 @@ html span {
 .hero .h2 {
   text-align: left;
 }
-.d-flex {
-  flex-direction: row;
-  justify-content: center;
-}
-@media (max-width: 575.98px) {
-  .d-flex {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .d-flex .card {
-    margin: 1rem;
-  }
-}
 
 .project {
   padding: 4rem !important;
@@ -10947,15 +10974,23 @@ html span {
   padding: 2rem;
   padding-left: 5rem;
 }
+.project .card-grp {
+  text-align: center;
+  align-items: center;
+  padding: 5rem;
+  height: fit-content;
+}
 .project .card {
+  display: inline-block;
   background: rgb(39, 36, 34);
   height: 20rem;
   width: 18rem;
+  min-width: 18rem;
   text-align: left;
   justify-content: right;
+  align-items: center;
   margin: 0.5rem;
-  padding: 0;
-  border: 0;
+  vertical-align: top;
   box-shadow: 0 6px 10px rgba(8, 8, 8, 0.696), 0 0 6px rgba(0, 0, 0, 0.05);
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
   cursor: pointer;
@@ -10993,6 +11028,9 @@ html span {
   height: fit-content;
   padding: 3rem;
   border-top: solid 0.05rem rgb(153, 141, 135);
+}
+.footer .d-flex {
+  justify-content: center;
 }
 .footer a {
   text-decoration: none;

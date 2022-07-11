@@ -17,6 +17,8 @@
     }
     a:hover{
         color: $g-400;
+
+       
     }
     h4, p{
         color: $g-300;
@@ -30,10 +32,4 @@
         color: $peach;
     }
     
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
 }
